@@ -1,0 +1,37 @@
+@import 'var';
+@import 'mixin';
+@import 'settings';
+
+:root {
+  --time-to-end-the-movie: 10;
+}
+
+.set-movie-path-form-b {
+  &__set-movie-path-input,
+  &__get-movie-btn {
+    margin: 20px 0;
+    padding: 6px 2px;
+  }
+}
+
+//PLAYER
+.player-container-b {
+  position: relative;
+  display: inline-block;
+
+  &__before-the-end-movie-alert {
+    @include pos();
+    display: none;
+    width: 100%;
+    height: calc(100% - 50px);
+    font-size: 2rem;
+    text-align: center;
+    color: $white;
+    background-image: linear-gradient(black 2%, transparent 240%);
+
+    &--counter-before-the-end-movie-js {
+      display: grid;
+      align-items: center;
+    }
+  }
+}
