@@ -8,7 +8,12 @@ function playerInit(currentMovieId) {
     height: '360',
     width: '640',
     videoId: currentMovieId,
-    playerVars: {'autoplay': 1},
+    playerVars:
+      {
+        'autoplay': 1,
+        // rel: 0,
+        // wmode: "transparent"
+      },
     events: {
       // 'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange

@@ -23,11 +23,12 @@
     @include pos();
     display: none;
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     font-size: 2rem;
     text-align: center;
     color: $white;
     background-image: linear-gradient(black 2%, transparent 240%);
+    pointer-events: none;
 
     &--counter-before-the-end-movie-js {
       display: grid;
